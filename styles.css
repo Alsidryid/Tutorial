@@ -1,0 +1,186 @@
+:root{
+    --main-font: 'Roboto';
+    --secondary-font: 'Raleway';
+    --main-background:#ffffff;
+    --sec-background:#2E2F42;
+    --sup-background:#4D5AE5;
+    --teem-background:#F4F4FD;
+    --main-color:#2E2F42;
+    --sec-color:#434455;
+    --hover-btn-color:#404BBF;
+    --btn-color:#E7E9FC;
+}
+body{
+    font-family:var(--main-font), sans-serif;
+    color: var(--main-color);
+    
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type: none;
+}
+.headr{
+    background-color: var(--main-background);
+}
+.logo{
+    color: var(--main-color);
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height:1.16;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    
+}
+.web{
+    color: var(--sup-background);
+}
+
+.nav_link{
+    font-family: Roboto;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+}
+.nav_link:hover, .nav_link:focus{
+    color: var(--sup-background);
+}
+.act-page{
+    color: var(--hover-btn-color);
+}
+.contacts_link{
+    font-family: Roboto;
+    color: var(--sec-color);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+}
+.contacts_link:focus, .contacts_link:hover{
+    color:var(--sup-background);
+}
+.hero{
+    background-color: var(--sec-background);
+}
+.hero_title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height:1.07;
+    color: var(--main-background);
+    text-align: center;
+    letter-spacing: 1.12px;
+}
+.hero_button{
+background-color: var(--sup-background);
+color: var(--main-background);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.64px;
+text-align: center;
+cursor: pointer;
+border: none;
+border-radius: 4px;
+}
+.hero_button:hover, .hero_button:focus{
+    background-color: var(--hover-btn-color);
+}
+.advantage_title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.2;
+    letter-spacing: 0.4px;
+}
+.advantage_text{
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+    color: var(--sec-color);
+}
+.our-job_title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height:1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.our-team{
+    background-color: var(--teem-background);
+}
+.our-team_card{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    background-color: var(--main-background);
+}
+.our-team_title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height:1.11;
+    letter-spacing: 0.72px;
+    text-align: center;
+}
+.our-team_titles{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.2;
+    letter-spacing: 0.4px;
+}
+.our-team_text{
+    color: var(--sec-color);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+}
+.footr{
+    background-color:var(--sec-background) ;
+}
+.log_footer{
+    color:var(--teem-background);
+
+}
+.footr_text{
+    color: var(--teem-background);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+}
+.portf_button{
+    cursor: pointer;
+background-color: var(--teem-background);
+border-radius: 4px;
+border: 1px solid var(--btn-color );
+color: var(--sup-background);
+font-family: var(--main-font);
+font-size: 16px;
+font-weight: 500;
+line-height:1.5;
+letter-spacing: 0.64px;
+text-align:center ;
+}
+.portf_button:hover, .portf_button:focus{
+    background-color: var(--hover-btn-color);
+    color: var(--main-background);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border-color: var(--hover-btn-color);
+}
+.portf_card{
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+
+}
+.portf_title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:1.2;
+    letter-spacing: 0.4px;
+}
+.portf_text{
+    color:var(--sec-color);
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.32px;
+}
