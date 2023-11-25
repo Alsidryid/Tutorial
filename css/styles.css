@@ -439,6 +439,7 @@ width: calc((100% - 120px) / 6);
     background-color: #E7E9FC;
     border:1px solid rgba(0, 0, 0, 0.10);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    cursor: pointer;
 
 }
 .modal_button:hover, .modal_button:focus{
@@ -580,6 +581,7 @@ width: calc((100% - 120px) / 6);
     line-height: 1.5;
     letter-spacing: 0.64px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    cursor: pointer;
 }
 .sub_button:hover , .sub_button:focus{
 background-color: var(--hover-btn-color);
@@ -591,4 +593,132 @@ color:var(--btn-color) ;
 }
 .sub_form{
 display: flex;
+}
+.form_title{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.form_box{
+    padding: 72px 24px 24px 24px;
+}
+.form_label{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    color: var(--icon-color);
+    margin-bottom: 8px;
+}
+.form_input{
+    width: 100%;
+    margin-top: 4px;
+    padding: 10px 11px 10px 36px;
+    font-size: 15px;
+        line-height: 1.5px;
+        letter-spacing: 0.32px;
+        border: 1px solid rgba(46, 47, 66, 0.40);
+        outline: none;
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form_icon{
+    position: absolute;
+    bottom:14px;
+    left:19px;
+    fill: var(--sec-background);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form_input:focus, .form_input:hover{
+    border-color: var(--sup-background);
+}
+.form_input:focus+.form_icon,.form_input:hover+.form_icon {
+    fill:var(--sup-background);
+}
+.form_textarea{
+    margin-top: 4px;
+        padding: 8px 16px ;
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        border: 1px solid rgba(46, 47, 66, 0.40);
+        outline: none;
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        resize: none;
+       height: 120px;
+       width: 100%;
+    }
+.form_textarea:focus,
+.form_textarea:hover {
+    border-color: var(--sup-background);
+}
+.label_chek{
+    margin-top: 16px;
+    margin-bottom: 24px;
+   justify-content: center;
+    color: var(--icon-color);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    position: relative;
+    display: flex;
+}
+.chek_link{
+    color: var(--sup-background);
+    text-decoration: underline;
+    margin-left: 2px;
+}
+.check-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 0;
+    top: -1px;
+position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+.chek:checked+.check-area{
+background-color: var(--sup-background);
+border-color: var(--sup-background);
+background-image: url(../images/check.svg);
+}
+.check-area:hover{
+    border-color: var(--sup-background);
+}
+.chek:focus+.check-area{
+border-color: var(--sup-background);
+}
+.form_subm{
+    display: block;
+    margin: 0 auto;
+    color: var(--main-background);
+    font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.64px;
+        padding: 16px 32px;
+        text-align: center;
+        background-color:var(--sup-background);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        width: 169px;
+        border: none;
+        cursor: pointer;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form_subm:hover, .form_subm:focus{
+    background-color: var(--hover-btn-color);
+
 }
