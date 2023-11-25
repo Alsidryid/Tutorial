@@ -437,12 +437,14 @@ width: calc((100% - 120px) / 6);
     justify-content: center;
     align-items: center;
     background-color: #E7E9FC;
-    border-color:rgba(0, 0, 0, 0.10) ;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    border:1px solid rgba(0, 0, 0, 0.10);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+
 }
 .modal_button:hover, .modal_button:focus{
-    background-color: var(--hover-btn-color);
-    border-color: var(--sup-background);
+  
+    border-color: #E7E9FC;
+    filter: drop-shadow(0px 2px 1px rgba(46, 47, 66, 0.08)) drop-shadow(0px 1px 1px rgba(46, 47, 66, 0.16)) drop-shadow(0px 1px 6px rgba(46, 47, 66, 0.08));
 }
 .pluses_picture{
     background-color: var(--teem-background);
@@ -536,9 +538,57 @@ width: calc((100% - 120px) / 6);
 .customers_link:focus .customers_svg{
     fill: var(--hover-btn-color);
 }
-.modal_button_close{
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.sub{
+    margin-left: 80px;
 }
-.modal_button:hover .modal_button_close{
-fill: white;
+.sub_title{
+    color: var(--main-background);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+}
+.sub_input{
+    padding: 8px 16px;
+    background-color: var(--sec-background);
+    border-radius: 4px;
+    width: 264px;
+    color: var(--main-background);
+    font-size: 12px;
+    line-height:2;
+    letter-spacing: 0.48px;
+        border: 1px solid var(--main-background);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub_input:hover, .sub_input:focus{
+    border-color: var(--hover-btn-color);
+}
+.sub_button{
+    margin-left: 24PX;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    background-color:var(--sup-background) ;
+    border: none;
+    border-radius: 4px;
+    color: var(--main-background);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.sub_button:hover , .sub_button:focus{
+background-color: var(--hover-btn-color);
+color:var(--btn-color) ;
+}
+.sub_icon{
+    margin-left: 16px;
+    fill: var(--main-background);
+}
+.sub_form{
+display: flex;
 }
